@@ -16,6 +16,11 @@
 * `requirements.txt` - Requirements file for python
 * `README.md` - Instructions on how to use this repo
 * `main.py` - Main file for inferencing the video
+
+Our implementation relied on 
+1. https://github.com/mjpramirez/Volvo-DataX
+2. https://github.com/OSU-Haolin/Pedestrian_Crossing_Intention_Prediction
+
 ## Install
 
 ### Clone the repository recursively:
