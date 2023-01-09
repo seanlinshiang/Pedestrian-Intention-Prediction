@@ -17,7 +17,7 @@
 
 ### Clone the repository recursively:
 
-    git clone --recurse-submodules https://github.com/xavierlinxiang/PedIntPredict.git
+    git clone --recurse-submodules https://github.com/xavierlinxiang/Pedestrian-Intention-Prediction.git
 
 If you already cloned and forgot to use `--recurse-submodules` you can run `git submodule update --init`
 
