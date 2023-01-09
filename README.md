@@ -1,4 +1,18 @@
 # PedIntPredict
+
+## Repo contents
+* `/fair_mot` - FairMOT module files
+* `/PCPA_weights` - Weights for PCPA, both with and without speed branch 
+* `/pose_estimation` - Skeleton fitting module files
+* `.gitignore` - Ignore misc files
+* `.gitmodules` - Submodules for FairMOT
+* `deeplabv3_mnv2_cityscapes_train_2018_02_05.tar.gz` - Video segmentation model
+* `action_predict.py` - Utils for action prediction
+* `utils_PCPA.py` - Utils for PCPA
+* `base_models.py` - Base models for PCPA
+* `requirements.txt` - Requirements file for python
+* `README.md` - Instructions on how to use this repo
+* `main.py` - Main file for inferencing the video
 ## Install
 
 ### Clone the repository recursively:
@@ -38,7 +52,19 @@ If you already cloned and forgot to use `--recurse-submodules` you can run `git 
     cd pose_estimation/tf_pose/pafprocess  
     swig -python -c++ pafprocess.i && python3 setup.py build_ext --inplace
 
-### Download graph path file:
+#### Download graph path file:
     cd pose_estimation/models 
     gdown 1tOcNuXMQLCW0t0Kn4X_kWYtIFrluTO5u
+
+## Running the code
+    python3 main.py 
+        --source <path to the video file>
+        --dense_model <path to the intention-prediction model>
+        --save-vid 
+        --save-txt
+
+### For more options or help
+    python3 main.py -h
+
+
 
