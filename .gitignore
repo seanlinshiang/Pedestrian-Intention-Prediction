@@ -1,0 +1,8 @@
+*.mp4
+runs/
+*.pt
+*.jpg
+*.pb
+*.pth
+__pycache__/
+annotations/

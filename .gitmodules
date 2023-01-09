@@ -1,0 +1,4 @@
+[submodule "fair_mot/DCNv2"]
+	path = fair_mot/DCNv2
+	url = https://github.com/ifzhang/DCNv2.git
+	branch = pytorch_1.7
