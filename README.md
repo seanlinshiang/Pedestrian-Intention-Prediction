@@ -4,6 +4,9 @@
 * `/fair_mot` - FairMOT module files
 * `/PCPA_weights` - Weights for PCPA, both with and without speed branch 
 * `/pose_estimation` - Skeleton fitting module files
+* `/speed` - Speed file for PIE datasets
+* `/speed_model` - Speed prediction model
+* `/raft_core` - Speed prediction module
 * `.gitignore` - Ignore misc files
 * `.gitmodules` - Submodules for FairMOT
 * `deeplabv3_mnv2_cityscapes_train_2018_02_05.tar.gz` - Video segmentation model
@@ -60,6 +63,7 @@ If you already cloned and forgot to use `--recurse-submodules` you can run `git 
     python3 main.py 
         --source <path to the video file>
         --dense_model <path to the intention-prediction model>
+        --speed_file <path to the speed file>
         --save-vid 
         --save-txt
 
